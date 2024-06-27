@@ -1,0 +1,81 @@
+{
+  "playlists": [
+    {
+      "id": "1",
+      "title": "best song",
+      "description": "la mejor cancion del mundo",
+      "userId": "1"
+    },
+    {
+      "title": "dasd",
+      "description": "asdasd",
+      "id": "8CBtulr"
+    },
+    {
+      "title": "bad bunny",
+      "description": "disco 2022",
+      "id": "e8Ro8oZ"
+    }
+  ],
+  "playlists_songs": [
+    {
+      "id": "1",
+      "playlistId": "1",
+      "songId": "1"
+    },
+    {
+      "id": "2",
+      "playlistId": "1",
+      "songId": "2"
+    },
+    {
+      "id": "3",
+      "playlistId": "1",
+      "songId": "3"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "email": "user1@example.com",
+      "password": "password1"
+    },
+    {
+      "id": "2",
+      "email": "user2@example.com",
+      "password": "password2"
+    },
+    {
+      "id": "3",
+      "email": "admin@example.com",
+      "password": "1234"
+    },
+    {
+      "id": "4",
+      "email": "admin",
+      "password": "1234"
+    }
+  ],
+  "songs": [
+    {
+      "id": "1",
+      "title": "fuentes de ortiz",
+      "artist": "Ed maverik"
+    },
+    {
+      "id": "2",
+      "title": "a las 9",
+      "artist": "no te va gustar"
+    },
+    {
+      "id": "3",
+      "title": "al vacio",
+      "artist": "no te va gustar"
+    },
+    {
+      "id": "4",
+      "title": "Tu",
+      "artist": "Shakira"
+    }
+  ]
+}

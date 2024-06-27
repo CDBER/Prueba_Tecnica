@@ -1,0 +1,24 @@
+#main-navbar {
+  padding: 0.5rem 1rem; /* Espaciado interno */
+  background-color: #666666 !important; /* Color de fondo blanco */
+}
+
+.navbar-toggler {
+  border-color: #fff; /* Color del borde del botón toggle */
+}
+
+.navbar-toggler-icon {
+  background-color: #fff; /* Color del icono del botón toggle */
+}
+
+.navbar-brand {
+  font-size: 1.2rem; /* Tamaño del texto del brand */
+}
+
+.navbar-nav .nav-link {
+  font-size: 1rem; /* Tamaño del texto de los enlaces */
+}
+
+.navbar-nav .nav-link:hover {
+  text-decoration: underline; /* Subraya el texto al pasar el mouse */
+}

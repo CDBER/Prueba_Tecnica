@@ -1,0 +1,65 @@
+<div class="container mt-4">
+  <div class="row">
+    <!-- Columna para el sidebar en pantallas grandes -->
+    <div class="col-lg-3 d-none d-lg-block">
+      <app-slidebar></app-slidebar>
+    </div>
+
+    <!-- Columna para el contenido principal -->
+    <div class="col-lg-9">
+      <!-- Navbar -->
+      <app-navbar></app-navbar>
+
+      <!-- Contenido principal debajo del Navbar -->
+      <div class="mt-4">
+        <h1 class="mb-4">My Playlist</h1>
+
+        <!-- Botón para agregar una nueva playlist -->
+        <button
+          type="button"
+          class="btn btn-primary mb-3"
+          (click)="addPlaylist()"
+        >
+          Add new playlist
+        </button>
+
+        <!-- Contenedor de la lista de música -->
+        <div class="music-list">
+          <!-- Lista de playlists -->
+          <ul class="list-group">
+            <!-- Iteración sobre las playlists -->
+            <li
+              class="list-group-item d-flex justify-content-between align-items-center"
+              *ngFor="let playlist of playlists"
+            >
+              {{ playlist.title }}
+              <div>
+                <button
+                  type="button"
+                  class="btn btn-secondary btn-sm me-2"
+                  (click)="editPlaylist(playlist)"
+                >
+                  Edit
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-success btn-sm me-2"
+                  (click)="playPlaylist(playlist)"
+                >
+                  Play
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-danger btn-sm"
+                  (click)="deletePlaylist(playlist)"
+                >
+                  Delete
+                </button>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

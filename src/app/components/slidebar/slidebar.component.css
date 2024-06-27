@@ -1,0 +1,36 @@
+/* Estilos para el Sidebar */
+.sidebar {
+  position: fixed;
+  top: 52px; /* Distancia desde la parte superior */
+  left: 0;
+  bottom: 0;
+  width: 240px;
+  z-index: 100; /* Asegurar que esté detrás del navbar */
+  background-color: #999999 !important; /* Fondo blanco */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  overflow-y: auto; /* Agregar scroll si es necesario */
+  transition: width 0.3s ease;
+}
+
+.sidebar .list-group-item {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  color: #333; /* Texto gris oscuro */
+  transition: background-color 0.3s;
+  padding: 0.75rem 1rem; /* Ajuste de espaciado interno */
+}
+
+.sidebar .list-group-item:hover {
+  background-color: #f0f0f0; /* Color de fondo al pasar el mouse */
+}
+
+.sidebar .list-group-item span {
+  margin-left: 16px; /* Espacio a la izquierda del texto */
+}
+
+@media (max-width: 991.98px) {
+  .sidebar {
+    width: 100%;
+  }
+}

@@ -1,0 +1,22 @@
+/* Estilo para el container principal */
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/* Ajustes para el título "Welcome to Music" */
+h1 {
+  font-size: 2.5rem; /* Tamaño de fuente más grande para mejor legibilidad */
+  margin-bottom: 1.5rem; /* Espaciado inferior adecuado */
+}
+
+/* Ajustes para los album-cards */
+.mb-4 {
+  margin-bottom: 0 !important;
+}
+
+.content-border {
+  border: 1px solid #ced4da; /* Estilo del borde */
+  padding: 20px; /* Espaciado interno para separar el contenido del borde */
+  border-radius: 8px; /* Borde redondeado para un aspecto más suave */
+}

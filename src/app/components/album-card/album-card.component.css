@@ -1,0 +1,50 @@
+.album-card {
+  width: 120px; /* Ancho deseado de la tarjeta */
+  margin-right: 15px; /* Margen derecho entre tarjetas (ajusta según necesites) */
+}
+
+.album-card .card {
+  border: 1px solid #ddd; /* Borde del card */
+  border-radius: 8px; /* Borde redondeado */
+  overflow: hidden; /* Ocultar contenido que sobresalga */
+  transition: box-shadow 0.3s ease; /* Transición suave para la sombra */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra del card */
+}
+
+.album-card .card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada al pasar el mouse */
+}
+
+.album-card .card-img-top {
+  width: 100%;
+  height: 80px; /* Altura reducida de la imagen */
+  object-fit: cover; /* Ajuste de la imagen dentro del contenedor */
+  border-bottom: 1px solid #ddd; /* Borde inferior de la imagen */
+}
+
+.album-card .card-body {
+  padding: 0.75rem; /* Espaciado interno reducido */
+}
+
+.album-card .card-title {
+  font-size: 0.75rem; /* Tamaño del título reducido */
+  font-weight: bold; /* Negrita */
+  margin-bottom: 0.5rem; /* Margen inferior reducido */
+}
+
+.album-card .card-text {
+  font-size: 0.625rem; /* Tamaño del texto reducido */
+  color: #666; /* Color del texto */
+}
+
+.album-card .btn-primary {
+  font-size: 0.625rem; /* Tamaño del texto del botón reducido */
+  padding: 0.25rem 0.5rem; /* Espaciado interno del botón reducido */
+  background-color: #007bff; /* Color de fondo del botón */
+  border-color: #007bff; /* Color del borde del botón */
+}
+
+.album-card .btn-primary:hover {
+  background-color: #0056b3; /* Color de fondo del botón al pasar el mouse */
+  border-color: #0056b3; /* Color del borde del botón al pasar el mouse */
+}

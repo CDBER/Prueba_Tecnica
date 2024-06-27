@@ -1,0 +1,89 @@
+<div class="container mt-4">
+  <div class="row">
+    <!-- Columna para el sidebar en pantallas grandes -->
+    <div class="col-lg-2 d-none d-lg-block">
+      <app-slidebar></app-slidebar>
+    </div>
+
+    <!-- Columna para el contenido principal -->
+    <div class="col-lg-9">
+      <!-- Navbar -->
+      <app-navbar></app-navbar>
+      <!-- album-card -->
+
+      <div class="mt-lg-5 content-border">
+        <h1 class="mb-4">Songs</h1>
+        <br />
+        <div class="row mt-2">
+          <div class="col-md-3">
+            <app-album-card></app-album-card>
+          </div>
+        </div>
+      </div>
+      <!-- Contenido principal debajo del Navbar -->
+      <div class="mt-lg-5 content-border">
+        <!-- Ajuste del margen top solo en pantallas grandes -->
+        <h1 class="mb-4">My PlayList</h1>
+        <br />
+        <button
+          type="button"
+          class="btn btn-primary mb-3"
+          data-bs-toggle="modal"
+          data-bs-target="#addPlaylistModal"
+        >
+          Add new playlist
+        </button>
+
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="addPlaylistModal"
+          tabindex="-1"
+          aria-labelledby="addPlaylistModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <app-add-play-list-form></app-add-play-list-form>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contenedor de la lista de música -->
+        <div class="music-list">
+          <!-- Lista de playlists -->
+          <ul class="list-group">
+            <!-- Iteración sobre las playlists -->
+            <li
+              class="list-group-item d-flex justify-content-between align-items-center"
+              *ngFor="let playlist of playlists"
+            >
+              <strong>Name playlist: </strong> {{ playlist.title }}
+              <strong>Description</strong>
+              {{ playlist.description }}
+
+              <div>
+                <button type="button" class="btn btn-secondary btn-sm me-2">
+                  Info
+                </button>
+
+                <button type="button" class="btn btn-success btn-sm me-2">
+                  Add+
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-danger btn-sm"
+                  (click)="deletePlaylist(playlist.id)"
+                >
+                  Delete
+                </button>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!--  -->
+      </div>
+    </div>
+  </div>
+</div>
