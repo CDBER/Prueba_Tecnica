@@ -1,12 +1,23 @@
-<!-- Contenido del modal -->
-<div class="modal">
-  <div class="modal-content">
-    <div class="modal-header">
-      <h5 class="modal-title">Playlist Information</h5>
-      <button type="button" class="btn-close" aria-label="Close">
-        <!-- Aquí puedes agregar un método para cerrar el modal si es necesario -->
-      </button>
+<div class="container mt-4">
+  <div class="row">
+    <div class="col-lg-2 d-none d-lg-block">
+      <app-slidebar></app-slidebar>
     </div>
-    <div class="modal-body"></div>
+
+    <div class="col-lg-9">
+      <app-navbar></app-navbar>
+
+      <div class="mt-lg-5 content-border">
+        <h1 class="mb-4">{{ playlist?.title }}</h1>
+        <p>{{ playlist?.description }}</p>
+
+        <!-- Mostrar lista de canciones -->
+        <ul class="list-group mt-4">
+          <li class="list-group-item" *ngFor="let song of playlist?.songs">
+            {{ song.title }} - {{ song.artist }}
+          </li>
+        </ul>
+      </div>
+    </div>
   </div>
 </div>

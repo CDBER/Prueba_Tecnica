@@ -1,0 +1,5 @@
+.content-border {
+  border: 1px solid #ced4da; /* Estilo del borde */
+  padding: 20px; /* Espaciado interno para separar el contenido del borde */
+  border-radius: 8px; /* Borde redondeado para un aspecto más suave */
+}

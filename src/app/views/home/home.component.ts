@@ -5,6 +5,7 @@ import { AlbumCardComponent } from '../../components/album-card/album-card.compo
 import { SlidebarComponent } from '../../components/slidebar/slidebar.component';
 import { CommonModule } from '@angular/common';
 import { AddPlaylistFormComponent } from '../../components/add-play-list-form/add-play-list-form.component';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -22,7 +23,10 @@ import { AddPlaylistFormComponent } from '../../components/add-play-list-form/ad
 export class HomeComponent implements OnInit {
   playlists: PlayList[] = [];
 
-  constructor(private playListService: PlayListService) {}
+  constructor(
+    private playListService: PlayListService,
+    private router: Router
+  ) {}
 
   ngOnInit() {
     console.log('El componente Home se ha cargado');
@@ -41,5 +45,9 @@ export class HomeComponent implements OnInit {
       console.log('Playlist eliminada con éxito');
       this.loadPlaylists(); // Actualizar la lista después de eliminar
     });
+  }
+
+  navigateToInfo(id: string) {
+    this.router.navigate(['/app-info-playlist', id]);
   }
 }

@@ -25,6 +25,7 @@
         <!-- Ajuste del margen top solo en pantallas grandes -->
         <h1 class="mb-4">My PlayList</h1>
         <br />
+
         <button
           type="button"
           class="btn btn-primary mb-3"
@@ -49,6 +50,30 @@
           </div>
         </div>
 
+        <!-- <button
+          type="button"
+          class="btn btn-primary mb-3"
+          data-bs-toggle="modal"
+          data-bs-target="#addPlaylistModal"
+        >
+          Add new playlist
+        </button>
+
+        
+        <div
+          class="modal fade"
+          id="addPlaylistModal"
+          tabindex="-1"
+          aria-labelledby="addPlaylistModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <app-add-play-list-form></app-add-play-list-form>
+            </div>
+          </div>
+        </div> -->
+
         <!-- Contenedor de la lista de música -->
         <div class="music-list">
           <!-- Lista de playlists -->
@@ -63,7 +88,11 @@
               {{ playlist.description }}
 
               <div>
-                <button type="button" class="btn btn-secondary btn-sm me-2">
+                <button
+                  type="button"
+                  class="btn btn-secondary btn-sm me-2"
+                  (click)="navigateToInfo(playlist.id)"
+                >
                   Info
                 </button>
 

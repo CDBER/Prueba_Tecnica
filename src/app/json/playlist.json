@@ -7,14 +7,19 @@
       "userId": "1"
     },
     {
-      "title": "dasd",
-      "description": "asdasd",
+      "title": "mejor mix",
+      "description": "80,90",
       "id": "8CBtulr"
     },
     {
       "title": "bad bunny",
       "description": "disco 2022",
       "id": "e8Ro8oZ"
+    },
+    {
+      "title": "sdad",
+      "description": "asd",
+      "id": "1sjsIGj"
     }
   ],
   "playlists_songs": [
@@ -32,6 +37,16 @@
       "id": "3",
       "playlistId": "1",
       "songId": "3"
+    },
+    {
+      "id": "4",
+      "playlistId": "e8Ro8oZ",
+      "songId": "5"
+    },
+    {
+      "id": "5",
+      "playlistId": "8CBtulr",
+      "songId": "1"
     }
   ],
   "users": [
@@ -76,6 +91,11 @@
       "id": "4",
       "title": "Tu",
       "artist": "Shakira"
+    },
+    {
+      "id": "5",
+      "title": "Los malaventurados no lloran",
+      "artist": "Panda"
     }
   ]
 }

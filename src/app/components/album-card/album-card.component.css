@@ -1,6 +1,6 @@
 .album-card {
-  width: 120px; /* Ancho deseado de la tarjeta */
-  margin-right: 15px; /* Margen derecho entre tarjetas (ajusta según necesites) */
+  width: 100%; /* Usar 100% para que ocupe todo el ancho de la columna */
+  margin-right: 15px; /* Margen derecho entre tarjetas */
 }
 
 .album-card .card {

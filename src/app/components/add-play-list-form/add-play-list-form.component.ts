@@ -32,8 +32,6 @@ export class AddPlaylistFormComponent implements OnInit {
   onSubmit(): void {
     console.log(this.playlistForm.value);
 
-    /*  const value: PlayListForm = this.playlistForm.value; */
-
     this.playListService.addPlaylist(this.playlistForm.value).subscribe(() => {
       console.log('Playlist added successfully');
     });

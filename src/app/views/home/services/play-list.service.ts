@@ -34,4 +34,9 @@ export class PlayListService {
     const deleteUrl = `${this.playListUrl}/${id}`;
     return this.http.delete(deleteUrl);
   }
+
+  getPlaylistById(id: string): Observable<PlayList> {
+    const url = `${this.playListUrl}/${id}`;
+    return this.http.get<PlayList>(url);
+  }
 }
